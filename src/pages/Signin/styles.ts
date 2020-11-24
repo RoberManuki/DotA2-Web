@@ -74,7 +74,7 @@ export const AnimationContainer = styled.div`
   }
 
   > a {
-    color: ${darken(0.4, '#FFFACD')};
+    color: ${darken(0.265, '#FF6347')};
     display: block;
     margin-top: 24px;
     text-decoration: none;
@@ -87,7 +87,7 @@ export const AnimationContainer = styled.div`
     }
 
     &:hover {
-      color: ${shade(0.4, darken(0.2, '#FFFACD'))};
+      color: ${shade(0.4, darken(0.265, '#FF6347'))};
     }
   }
 `;

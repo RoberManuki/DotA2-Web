@@ -1,3 +1,4 @@
+import { darken } from 'polished';
 import styled, { css } from 'styled-components';
 import Tooltip from '../Tooltip';
 
@@ -34,14 +35,14 @@ export const Container = styled.div<ContainerProps>`
   ${props =>
     props.isFocused &&
     css`
-      color: #ffd700;
-      border-color: #ffd700;
+      color: #f4ede8;
+      border-color: #f4ede8;
     `}
 
   ${props =>
     props.isFilled &&
     css`
-      color: #ffd700;
+      color: #f4ede8;
     `}
 
   input {

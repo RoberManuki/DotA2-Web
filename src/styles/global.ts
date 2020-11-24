@@ -1,3 +1,4 @@
+import { darken } from 'polished';
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
@@ -10,7 +11,7 @@ export default createGlobalStyle`
 
   body {
     background: #312e38;
-    color: #FFD700;
+    color: ${darken(0.265, '#FF6347')};
     -webkit-font-smoothing: antialiased;
   }
 
