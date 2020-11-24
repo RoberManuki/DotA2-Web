@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import { shade } from 'polished';
+import { darken, shade } from 'polished';
 import siginBackgroundImg from '../../assets/sign-in-background.png';
 
 export const Container = styled.div`
@@ -44,6 +44,13 @@ export const AnimationContainer = styled.div`
 
   animation: ${appearFromLeft} 1s;
 
+  > img {
+    max-width: 400px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+  }
+
   form {
     margin: 0 80px;
     width: 340px;
@@ -67,7 +74,7 @@ export const AnimationContainer = styled.div`
   }
 
   > a {
-    color: #ff9000;
+    color: ${darken(0.4, '#FFFACD')};
     display: block;
     margin-top: 24px;
     text-decoration: none;
@@ -80,7 +87,7 @@ export const AnimationContainer = styled.div`
     }
 
     &:hover {
-      color: ${shade(0.2, '#ff9000')};
+      color: ${shade(0.4, darken(0.2, '#FFFACD'))};
     }
   }
 `;

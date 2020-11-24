@@ -70,7 +70,7 @@ const Signin: React.FunctionComponent = () => {
           <AnimationContainer>
             <img src={logoImg} alt="GoBarber" />
             <Form ref={formRef} onSubmit={handleSubmit}>
-              <h1>Faça seu logon</h1>
+              <h1>Seja bem vindo!</h1>
 
               <Input name="email" icon={FiMail} placeholder="Email" />
               <Input

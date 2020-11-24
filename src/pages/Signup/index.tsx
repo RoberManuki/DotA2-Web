@@ -76,7 +76,7 @@ const Signup: React.FunctionComponent = () => {
           <AnimationContainer>
             <img src={logoImg} alt="GoBarber" />
             <Form ref={formRef} onSubmit={handleSubmit}>
-              <h1>Faça seu cadastro</h1>
+              <h1>Cadastro</h1>
 
               <Input name="name" icon={FiUser} placeholder="Name" />
               <Input name="email" icon={FiMail} placeholder="Email" />
